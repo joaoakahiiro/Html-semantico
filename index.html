@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site exemplo</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            background-color: #fff7f7;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            height: 100px;
+            width: 100%;
+            background-color: #aa8191;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: 600;
+            color: #fff7f7;
+            cursor: pointer;
+        }
+        nav{
+            display: flex;
+            margin-left: 400px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+        nav li{
+            margin: 0 10px;
+            height: 25px;
+            width: 50px;
+            background-color: #fff7f7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+        nav li:hover{
+            background-color: #ece1e1;
+            border-radius: 10px;
+        }
+        nav a{
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .secao{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .secao1{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            height: 400px;
+            margin: 20px 10px;
+            transition: 0.5s;
+            border: 2px solid rgb(243, 229, 229);
+            border-radius: 10px;
+        }
+        .secao1:hover{
+            background-color: rgb(243, 229, 229);
+            border-radius: 20px;
+        }
+        .secao2{
+            height: 500px;
+            width: 100%;
+            display: grid;
+            grid-column: 45%, 45%;
+            gap: 10px;
+        }
+        .galeria{
+            background-color: gray;
+            height: 200px;
+        }
+
+        footer{
+            background-color: #aa8191;
+            color: #fff7f7;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <header>
+        <section class="logo">Logo</section>
+        <nav>
+            <ul>
+                <li><a href="#">Top1</a></li>
+                <li><a href="#">Top2</a></li>
+                <li><a href="#">Top3</a></li>
+                <li><a href="#">Top4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="secao">
+        <section class="secao1">Seção de conteudo 1</section>
+        <section class="secao1">Seção de conteudo 2</section>
+    </section>
+    <section class="secao">
+        <section class="secao1">Seção de conteudo 3</section>
+        <section class="secao1">Seção de conteudo 4</section>
+    </section>
+    <footer>
+        Obrigado © Site exemplo | Exemplo site
+    </footer>
+</body>
+</html>
